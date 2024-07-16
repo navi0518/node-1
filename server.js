@@ -346,8 +346,8 @@ let client;
 async function connectToMongoDB() {
   try {
     client = await MongoClient.connect(mongoUrl, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true,
     });
     console.log("Connected to MongoDB");
   } catch (error) {
